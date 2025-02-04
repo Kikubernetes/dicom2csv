@@ -1,6 +1,6 @@
 # dicom2csv
 
-DICOMタグから情報を取得し、現在のディレクトリにCSVファイルを作成するスクリプトです。  
+DICOMタグから情報を取得し、CSVファイルを作成するスクリプトです。  
 
 
 - DICOMファイルの情報からさまざまな被験者属性、スキャナ情報、撮像パラメータを一覧にすることができます。
@@ -16,7 +16,7 @@ cd your/path/to/dicom/directory
 cp ~/git/dicom2csv/dcm2csv_raw.py .
 ./dcm2csv_raw.py
 ```
-
+カレントディレクトリに"results.csv"が出力されます。
 
 - **DICOMとNIfTIなど、ファイルが混在** している場合は、DICOMファイルを `org_data` という名前のディレクトリにまとめ、全シリーズの情報を使うには`dcm2csv.py` を、DTIのみほしい場合は `dti2csv.py` を使用してください。
 
